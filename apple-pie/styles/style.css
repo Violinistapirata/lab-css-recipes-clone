@@ -34,6 +34,7 @@ body {
 /* STYLES */
 /* Write your CSS below */
 
+/* styles for the header section */
 #header {
   background-image: url("../images/apple-pie.jpg");
   background-position: 0 0;
@@ -51,9 +52,12 @@ body {
   font-size: 50px;
 }
 
+/* general layout for the main section */
 main {
   padding: 50px;
 }
+
+/* styles for the intro section */
 #intro {
   width: 100%;
   display: flex;
@@ -66,9 +70,12 @@ main {
   margin-top: 20px;
 }
 
+/* styles for the hr tags */
 hr {
   border: 1px solid rgb(179, 175, 175);
 }
+
+/* styles for the last two sections */
 .section {
   display: flex;
   flex-direction: column;
@@ -76,59 +83,54 @@ hr {
   padding-top: 20px;
 }
 
+.section div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .text-box {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.section div {
-  width: 100%;
-  display: flex;
-  justify-content: center;  
-}
-
-.section {
-  .text-box {
-    h3 {
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    ul li {
-      font-size: 14px;
-      line-height: 1.4em;
-      list-style-type: none;
-      position: relative;
-      padding-left: 7px;
-      margin-left: 5px;
-    }
-
-    ul li::before {
-      content: "-";
-      position: absolute;
-      left: 0;
-    }
-
-    ol li {
-      font-size: 14px;
-      line-height: 1.4em;
-      list-style-type: none;
-      position: relative;      
-      margin-left: 5px;
-      counter-increment: item;
-    }
-
-    ol li::before {
-      content: counter(item) ")";
-      left: 0;
-    }
-  }
+  text-align: start;
 }
 
 .text-box {
-  text-align: start;
+  h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  ul li {
+    font-size: 14px;
+    line-height: 1.4em;
+    list-style-type: none;
+    position: relative;
+    padding-left: 7px;
+    margin-left: 5px;
+  }
+
+  ul li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+  }
+
+  ol li {
+    font-size: 14px;
+    line-height: 1.4em;
+    list-style-type: none;
+    position: relative;
+    margin-left: 5px;
+    counter-increment: item;
+  }
+
+  ol li::before {
+    content: counter(item) ")";
+    left: 0;
+  }
 }
 
 .text-box div {
