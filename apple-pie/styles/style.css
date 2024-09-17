@@ -37,7 +37,7 @@ body {
 /* styles for the header section */
 #header {
   background-image: url("../images/apple-pie.jpg");
-  background-position: 0 0;
+  background-position: 0 25%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 360px;
