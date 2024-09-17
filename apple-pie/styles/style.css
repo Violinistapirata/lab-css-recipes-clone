@@ -29,6 +29,8 @@ ul {
 /*  Set the font */
 body {
   font-family: "Helvetica", sans-serif;
+  width: 285px;
+  height: 473px;
 }
 
 /* STYLES */
@@ -37,16 +39,16 @@ body {
 /* styles for the header section */
 #header {
   background-image: url("../images/apple-pie.jpg");
-  background-position: 0 25%;
+  background-position: 0 29%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 360px;
+  height: 33.9%;
   position: relative;
 }
 
 #header > h1 {
   color: white;
-  font-size: 50px;
+  font-size: 1.3em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,62 +57,62 @@ body {
 
 /* general layout for the main section */
 main {
-  padding: 50px;
+  padding: 1.5em 1.7em;
 }
 
 /* styles for the intro section */
 #intro {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+#intro p {
+  font-size: 0.41em;
+  line-height: 1.2em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* styles for the images */
+.image-container {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .info-img {
   width: 44%;
-  margin-top: 20px;
+  margin-top: 0.5em;
 }
 
 /* styles for the hr tags */
 hr {
-  border: 1px solid rgb(179, 175, 175);
+  margin: 0.3em 0;
+  border: 0.5px solid rgb(179, 175, 175);
 }
 
 /* styles for the last two sections */
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 20px;
+  padding-top: 1.3em;
+  font-size: 0.35em;
+  line-height: 1.3em;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.section div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.text-box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-}
 
 .text-box {
   h3 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0);  
+    margin-bottom: 0.8em;
+  }
+
+  ul {
+    margin-bottom: 1.8em;
   }
 
   ul li {
-    font-size: 14px;
-    line-height: 1.4em;
     list-style-type: none;
     position: relative;
-    padding-left: 7px;
-    margin-left: 5px;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
   }
 
   ul li::before {
@@ -119,12 +121,13 @@ hr {
     left: 0;
   }
 
+  ol {
+    margin-top: 1.8em;
+  }
   ol li {
-    font-size: 14px;
-    line-height: 1.4em;
     list-style-type: none;
     position: relative;
-    margin-left: 5px;
+    margin-left: 0.5em;
     counter-increment: item;
   }
 
@@ -132,10 +135,4 @@ hr {
     content: counter(item) ")";
     left: 0;
   }
-}
-
-.text-box div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
