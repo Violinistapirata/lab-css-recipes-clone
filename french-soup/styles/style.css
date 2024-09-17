@@ -9,7 +9,7 @@ html, body, main, h1, h2, h3, h4, h5, h6, ul, ol {
 /*Import the font and set the default size*/
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 16px
 }
 
@@ -32,7 +32,7 @@ body {
   text-align: center;
   width: 80%;
   color: white;
-  font-size: 1em;
+  font-size: 1.4em;
   position: absolute;
   top: 50%;
   left: 50%;
